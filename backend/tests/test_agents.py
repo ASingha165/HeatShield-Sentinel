@@ -106,3 +106,37 @@ async def test_orchestrator_end_to_end():
     assert res.work_rest_ratio is not None
     assert res.hydration_target_ml_per_hour > 0
     assert len(res.sources_cited) >= 2
+
+
+def test_strands_sdk_agent_and_tool_registration():
+    """Verifies that all 4 specialized agents initialize genuine Strands Agents with registered tools."""
+    env_agent = EnvironmentalRiskAgent()
+    assert env_agent.strands_agent is not None
+    assert "calculate_thermal_hazard" in env_agent.strands_agent.tool_names
+
+    worker_agent = WorkerSafetyAgent()
+    assert worker_agent.strands_agent is not None
+    assert "calculate_occupational_heat_strain" in worker_agent.strands_agent.tool_names
+
+    resource_agent = CommunityResourceAgent()
+    assert resource_agent.strands_agent is not None
+    assert "query_verified_cooling_facilities" in resource_agent.strands_agent.tool_names
+
+    verification_agent = VerificationAgent()
+    assert verification_agent.strands_agent is not None
+    assert "audit_safety_invariants" in verification_agent.strands_agent.tool_names
+
+
+def test_strands_agent_tool_execution():
+    """Verifies direct Strands tool invocation returning structured JSON content."""
+    env_agent = EnvironmentalRiskAgent()
+    output = env_agent.strands_agent.tool.calculate_thermal_hazard(
+        temp_c=40.0,
+        heat_index_c=52.0,
+        wbgt_c=32.0,
+        humidity_pct=70.0,
+    )
+    assert output["status"] == "success"
+    assert "toolUseId" in output
+    assert "EXTREME_DANGER" in output["content"][0]["text"]
+
