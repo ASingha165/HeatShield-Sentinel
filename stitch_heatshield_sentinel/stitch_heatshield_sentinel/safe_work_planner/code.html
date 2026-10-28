@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#00130a","tertiary-fixed":"#ffdcc3","secondary":"#5a605c","on-primary-fixed":"#062016","on-primary-container":"#769283","on-secondary-fixed-variant":"#434844","on-error":"#ffffff","on-error-container":"#93000a","inverse-primary":"#b0cdbd","surface-container-low":"#f1f5f2","on-background":"#181d1b","error-container":"#ffdad6","surface-variant":"#dfe3e1","surface-tint":"#4a6457","surface-dim":"#d7dbd8","secondary-fixed-dim":"#c3c8c3","on-surface-variant":"#424844","on-secondary":"#ffffff","on-primary":"#ffffff","primary-fixed":"#cce9d8","on-tertiary-container":"#d27200","on-primary-fixed-variant":"#324c3f","surface-container-high":"#e5e9e6","tertiary":"#1c0a00","on-tertiary":"#ffffff","surface-container":"#ebefec","background":"#f6faf7","inverse-surface":"#2d3130","on-tertiary-fixed-variant":"#6e3900","surface":"#f6faf7","inverse-on-surface":"#eef2ef","primary-container":"#0f291e","on-secondary-container":"#606662","tertiary-fixed-dim":"#ffb77d","secondary-container":"#dfe4df","tertiary-container":"#3b1c00","surface-container-lowest":"#ffffff","outline":"#727974","surface-bright":"#f6faf7","error":"#ba1a1a","outline-variant":"#c2c8c2","on-surface":"#181d1b","surface-container-highest":"#dfe3e1","on-tertiary-fixed":"#2f1500","primary-fixed-dim":"#b0cdbd","on-secondary-fixed":"#181d1a","secondary-fixed":"#dfe4df"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1.25rem","margin-desktop":"2.5rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","margin-tablet":"1.5rem","margin":"1rem"},"fontFamily":{"label-lg":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"label-caps":["Inter"],"metric-display":["Inter"],"body-lg":["Inter"],"metric-display-mobile":["Inter"],"display-lg-mobile":["Inter"],"display-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"metric-display":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"metric-display-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex items-start gap-space-sm bg-surface-container-lowest"><img alt="HeatShield Sentinel Brand Mark" class="h-8 w-auto object-contain flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida/AEtjO1Ve1GySMkA05HLBiZYHGQQQkIyYtnHcSGMgmC59KOp8V7aQ0qP1xxzyznR4ykrdxG_SAjfFqeYvdtT5dB5qxch3LDIW3NGVBF1pjCUWHLoip6OwdzN17fbZ2UcYYpIbBxhGaWtZfr6Nv5s49wI1mjIPsrvWw9EhdwrT38zXk-eCThm_aJwcad-fJO8gZsYdQls9CbMvMGJDb82OisDsdXnt5RBvhkU_LTaOyfou-VJCNw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">HeatShield Sentinel</span><span class="font-label-caps text-label-caps text-secondary uppercase">Climate &amp; Occupational Safety</span></div></div><nav class="flex flex-col gap-space-xs px-space-md py-space-lg" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Command Center</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="worker-assessment" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Worker Assessment</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-all bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="safe-work-planner" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Safe Work Planner</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="heat-risk-intelligence" href="#"><span class="material-symbols-outlined text-[20px]">thermostat</span><span>Heat Risk Intelligence</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cooling-resources" href="#"><span class="material-symbols-outlined text-[20px]">water_drop</span><span>Cooling Resources</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="community-insights" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>Community Insights</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="about-the-system" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span>About the System</span></a></nav></div><div class="p-space-md m-space-md bg-surface-container-lowest rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-secondary uppercase">Demonstration Mode</span><span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><div class="font-label-md text-label-md text-on-surface">Kolkata, WB Urban Sector</div><div class="flex items-center justify-between pt-space-xs"><span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant">Updated 12m ago</span><span class="font-label-caps text-label-caps text-on-surface-variant">Operational 100%</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-md text-label-md text-on-surface">Kolkata, West Bengal (Barabazar / Sealdah Ward 48)</span><span class="ml-1 inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-surface-container text-secondary">Live Weather API + IMD Alert Sync</span></div><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps"><span class="material-symbols-outlined text-[14px]">warning</span>DEMO DATA ACTIVE</div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-lowest rounded-lg p-0.5 font-label-caps text-label-caps text-secondary"><span class="px-2 py-1 rounded bg-primary-container text-on-primary font-bold">EN active</span><button class="px-2 py-1 hover:text-on-surface transition-colors" type="button">বাংলা</button><button class="px-2 py-1 hover:text-on-surface transition-colors" type="button">हिंदी</button></div><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md hover:bg-error-container hover:text-on-error-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span>Heat Illness Protocol 108</button><div class="relative flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-caps text-[9px]">1</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Ananya Sen</span><span class="font-label-caps text-label-caps text-secondary">Safety Field Lead</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ6Kd_7zbLFvbowPH7sHMd5A8QkPEenyCt16fgJQRSXe1NH8TYQ3fUlS4SGNpZj-8GQTuNWIVXfoa2hbCnQi5UFdrmWb7jO-dvFXNDiAdScgifsRBryCVboSrKE3GcyuF5YE1DNe9PWLFFcRlRw5ojBOUC4BvD8PJRG1FSUqCn4IFN7X0taBFz42QU0WGhc0oIsXxRUMCtBYklV9Y97QfC8YN2zt5Zt1eNIRhR3zyZ"/></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg flex flex-col gap-space-lg max-w-[1440px] mx-auto w-full">
+<!-- Screen Header & Context Subtitle -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-ping"></span>
+            ACTIVE SAFETY PROTOCOL
+          </span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">NDMA / WHO Compliant</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-background tracking-tight">Safe Work Operational Planner</h1>
+<p class="font-body-md text-body-md text-secondary max-w-3xl">
+          Customized heat-mitigation schedule and practical safety protocols generated for:
+          <span class="font-semibold text-on-background">Construction Laborers</span>
+          (Heavy Workload, 7 hrs outdoor exposure, Sealdah Urban Site).
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-colors shadow-sm" id="btn-export-sms" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+          SMS Crew Lead
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-colors shadow-sm" id="btn-print-card" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+          Print Field Card
+        </button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:opacity-90 transition-opacity shadow-sm" id="btn-pdf-modal" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+          Bengali / Hindi Poster PDF
+        </button>
+</div>
+</div>
+<!-- 1. Urgent Safety & Medical Protocol Alert (Prominent Top Banner) -->
+<div class="rounded-xl bg-error-container text-on-error-container p-space-md md:p-space-lg shadow-md relative overflow-hidden">
+<div class="flex items-start gap-space-md relative z-10">
+<div class="p-2.5 rounded-lg bg-error text-on-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg font-bold uppercase tracking-wider text-error">CRITICAL SAFETY DIRECTIVE</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps">MANDATORY PROTOCOL</span>
+</div>
+<p class="font-body-md text-body-md leading-relaxed text-on-error-container font-medium">
+            Heat exhaustion can progress rapidly to exertional heatstroke. If anyone experiences confusion, slurred speech, vomiting, or loss of consciousness:
+            <span class="font-bold underline decoration-error">STOP WORK IMMEDIATELY, MOVE TO SHADE, INITIATE ACTIVE COOLING (water dousing), AND CALL 108 AMBULANCE.</span>
+            Do not delay emergency care for algorithm re-assessment.
+          </p>
+</div>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-error/10 to-transparent pointer-events-none"></div>
+</div>
+<!-- 2. Context Snapshot Card (Bento Style with Visual Gauges & Photos) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Key Metric Panel -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">analytics</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Assessed Parameter Snapshot</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+            SEVERELY HAZARDOUS
+          </span>
+</div>
+<!-- Metric Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Ambient Temp</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-background">39.4</span>
+<span class="font-label-lg text-label-lg text-secondary">°C</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">Sealdah Station Sensor</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="font-label-caps text-label-caps text-on-tertiary-fixed uppercase font-semibold">Heat Index</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-tertiary-fixed">51.2</span>
+<span class="font-label-lg text-label-lg text-on-tertiary-fixed">°C</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-tertiary-fixed opacity-90 mt-0.5">Danger Threshold Exceeded</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Work Intensity</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-background">Strenuous</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">Scaffolding / Masonry</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-primary-container text-on-primary">
+<span class="font-label-caps text-label-caps text-on-primary-container uppercase">Peak Ratio</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">20m / 40m</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Rest vs Work per Hour</span>
+</div>
+</div>
+<!-- Work-Rest Ratio Segmented Gauge Graphic -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-background font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">timer</span>
+              Mandatory Cycle: 40m Active Shovel &amp; Rig / 20m Shade &amp; Water
+            </span>
+<span class="text-secondary font-label-caps text-label-caps">Hourly Cycle Breakdown</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden">
+<div class="h-full bg-primary" style="width: 66.6%;"></div>
+<div class="h-full bg-tertiary-fixed-dim" style="width: 33.4%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-primary inline-block"></span>Work Duration (40m)</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-tertiary-fixed-dim inline-block"></span>Active Canopy Recovery (20m)</span>
+</div>
+</div>
+</div>
+<!-- Field Site & Water Resource Visual -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="relative w-full h-36 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Indian construction workers in safety helmets and fluorescent vests taking a hydration rest under a designated shaded green canopy tent at an urban Kolkata job site in bright sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB82TQvmsOf5dNBZwngp2gGcgXFksKbnWu0CQUmwPdaqpLwYqhGcPZyGMepJiZsWRGdG4hNmMxXHE-qV9E1iu4Oon8K14ZE9OZSXdP3yB62iZMvsQOYjCtMTUeuuSuwAP2v9R6kLliIcGJiyD-1CZM3J1U2UdbJ69bKU1_-n7IiTcdeY-_M2giBecZSEC80x7JRXrqytk8eS0JQbkp2x7aQU8-P-G-cwnQMHgTFd5p0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-on-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+              Sealdah Canopy Station 02
+            </span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Hydration Stock</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps">Refilled</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Chilled matka earthen pot (20L) &amp; ORS packs staged at Pier 14 canopy. Verified 07:15 IST.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps text-secondary">BUDDY PROTOCOL</span>
+<span class="font-label-md text-label-md font-semibold text-primary">12 Pairs Enrolled</span>
+</div>
+</div>
+</div>
+<!-- 3. Timeline Action Planner -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-primary">schedule</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Chronological Safety Timeline</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface" id="completion-counter">
+            2 / 8 Protocols Verified
+          </span>
+<button class="font-label-md text-label-md text-primary hover:underline" id="btn-toggle-all" type="button">
+            Check All
+          </button>
+</div>
+</div>
+<!-- Timeline Container -->
+<div class="flex flex-col gap-space-md relative">
+<div class="hidden md:block absolute left-8 top-6 bottom-6 w-0.5 bg-surface-variant pointer-events-none"></div>
+<!-- PHASE 1: Before Starting Work -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row gap-space-md relative">
+<div class="flex items-start md:w-56 flex-shrink-0 gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 shadow-sm relative z-10 font-bold">
+              1
+            </div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Phase 1</span>
+<span class="font-headline-sm text-headline-sm text-on-background leading-tight">Before Shift</span>
+<span class="font-label-md text-label-md text-primary font-semibold">07:00 – 09:30 IST</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-space-sm">
+<!-- Checklist Item 1 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input checked="" class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Hydrate with at least 500ml water + electrolyte/ORS prior to site arrival.
+                  </span>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">Priority: High</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps">WHO / ILO Guidance</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Early hydration lowers baseline thermal strain before direct sun radiant heating begins.
+                </span>
+</div>
+</label>
+<!-- Checklist Item 2 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input checked="" class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Inspect site shade canopies and confirm 20L clean water crock is filled and shaded.
+                  </span>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">Priority: High</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps">NDMA Heat Action Plan</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Earthen pot cooling keeps water at optimal 15–18°C without electricity requirement.
+                </span>
+</div>
+</label>
+<!-- Checklist Item 3 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Pre-identify designated buddy pairing for safety monitoring.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">Peer Protocol</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Each laborer is assigned a co-worker to watch for early micro-signs of disorientation, stopped sweating, or heavy gait.
+                </span>
+</div>
+</label>
+</div>
+</div>
+<!-- PHASE 2: During Outdoor Activity & Peak Heat -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row gap-space-md relative">
+<div class="flex items-start md:w-56 flex-shrink-0 gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 shadow-sm relative z-10 font-bold">
+              2
+            </div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-error uppercase font-bold">Phase 2 — Peak Danger</span>
+<span class="font-headline-sm text-headline-sm text-on-background leading-tight">Peak Activity</span>
+<span class="font-label-md text-label-md text-error font-semibold">10:00 – 15:30 IST</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-space-sm">
+<!-- Checklist Item 4 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-error-container/40 hover:bg-error-container/60 transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-error accent-error cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-background font-semibold group-hover:text-error transition-colors">
+                    Implement strict 40 min work / 20 min shade rotation. Rotate heavy shoveling every 20 mins.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps">Priority: Critical</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-error-container">
+                  Continuous heavy shoveling past 25 minutes in 51°C Heat Index drastically spikes internal core temperature beyond 38.5°C.
+                </span>
+</div>
+</label>
+<!-- Checklist Item 5 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-error-container/40 hover:bg-error-container/60 transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-error accent-error cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-background font-semibold group-hover:text-error transition-colors">
+                    Continuous fluid intake: Consume 250ml water every 15–20 minutes, even without feeling thirsty.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps">Priority: Critical</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-error-container">
+                  Thirst response lags dehydration by up to 1.5 liters in extreme humidity. Water marshal to announce whistle checks every 20m.
+                </span>
+</div>
+</label>
+<!-- Checklist Item 6 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Wet bandana / head cooling cloth application during shade breaks.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">Active Cooling</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Submerge cotton towels in cool water bins and drape across carotid arteries on neck during rest periods.
+                </span>
+</div>
+</label>
+</div>
+</div>
+<!-- PHASE 3: Rest Breaks & Recovery Protocol -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row gap-space-md relative">
+<div class="flex items-start md:w-56 flex-shrink-0 gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center flex-shrink-0 shadow-sm relative z-10 font-bold">
+              3
+            </div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Phase 3</span>
+<span class="font-headline-sm text-headline-sm text-on-background leading-tight">Rest &amp; Recovery</span>
+<span class="font-label-md text-label-md text-secondary">Canopy Zone</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-space-sm">
+<!-- Checklist Item 7 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Mandatory unbuttoning of heavy safety harness/vest in shade to allow convective sweat evaporation.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">Ergonomic</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Synthetic high-visibility materials trap microclimates against torso, inhibiting natural latent cooling.
+                </span>
+</div>
+</label>
+<!-- Checklist Item 8 -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Consume oral rehydration salt solution or tender coconut water during 13:00 break.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps">Electrolyte Balance</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Prevents severe hyponatremia and painful skeletal heat cramps induced by high-volume plain water flushing.
+                </span>
+</div>
+</label>
+</div>
+</div>
+<!-- PHASE 4: When Conditions Deteriorate -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row gap-space-md relative">
+<div class="flex items-start md:w-56 flex-shrink-0 gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 shadow-sm relative z-10 font-bold">
+              4
+            </div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase font-bold">Phase 4 — Escalation</span>
+<span class="font-headline-sm text-headline-sm text-on-background leading-tight">Hazard Trigger</span>
+<span class="font-label-md text-label-md text-error font-semibold">Heat Index &gt; 52°C</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Halt direct unshaded metal roofing and asphalt handling. Transition crew to shaded ground tasks or postpone until 16:30.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps">Work Stop Order</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Dark asphalt and corrugated sheets radiate contact temperatures above 64°C, creating second-degree burn hazards.
+                </span>
+</div>
+</label>
+</div>
+</div>
+<!-- PHASE 5: End-of-Shift Review & Recovery -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row gap-space-md relative">
+<div class="flex items-start md:w-56 flex-shrink-0 gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm relative z-10 font-bold">
+              5
+            </div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Phase 5</span>
+<span class="font-headline-sm text-headline-sm text-on-background leading-tight">Shift Wrap-up</span>
+<span class="font-label-md text-label-md text-primary font-semibold">17:00 IST</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<input class="timeline-check mt-1 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex-1 flex flex-col gap-0.5">
+<div class="flex items-center justify-between flex-wrap gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                    Post-shift hydration check and check-in with safety coordinator. Report any cramps or severe fatigue.
+                  </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">Debrief</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Late-onset exertional symptoms may trigger up to 3 hours post-exposure. Log any incidents in the Municipal Ward Ledger.
+                </span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Quick Reference Action Export Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-high text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-background font-semibold">Field Safety Card Ready</span>
+<p class="font-body-sm text-body-sm text-secondary">
+            Pre-formatted 2-page pocket card with Bengali and Hindi emergency instructions.
+          </p>
+<button class="text-primary font-label-md text-label-md hover:underline text-left mt-1" onclick="window.print()" type="button">
+            Print 10 Copies →
+          </button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-high text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">send_to_mobile</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-background font-semibold">SMS Broadcast Dispatch</span>
+<p class="font-body-sm text-body-sm text-secondary">
+            Sends work/rest whistle schedule to 4 site foremen and 12 registered buddy pairs.
+          </p>
+<button class="text-primary font-label-md text-label-md hover:underline text-left mt-1" id="btn-quick-sms" type="button">
+            Dispatch SMS Broadcast →
+          </button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-high text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">contact_phone</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-lg text-label-lg text-on-background font-semibold">Emergency Contacts Staged</span>
+<p class="font-body-sm text-body-sm text-secondary">
+            NRS Medical College Ward 48 liaison on standby: +91 33 2265 3211.
+          </p>
+<span class="font-label-md text-label-md text-error font-semibold mt-1">
+            Dial 108 for Critical Transport
+          </span>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Hidden by Default) -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 transform transition-all duration-300 translate-y-20 opacity-0 pointer-events-none" id="toast-msg">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-text">Safety broadcast transmitted to 16 recipients.</span>
+</div>
+<!-- Poster Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="poster-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">description</span>
+<span class="font-headline-sm text-headline-sm text-on-background">Download Multi-Lingual Posters</span>
+</div>
+<button class="text-secondary hover:text-on-background" id="modal-close" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">বাংলা (Bengali Field Poster)</span>
+<span class="font-body-sm text-body-sm text-secondary">A3 Color Sheet • চিত্রযুক্ত নিরাপত্তা নির্দেশিকা</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-opacity-90" type="button">
+              PDF (2.1 MB)
+            </button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">हिन्दी (Hindi Construction Flyer)</span>
+<span class="font-body-sm text-body-sm text-secondary">A3 Color Sheet • लू से बचाव और कार्य योजना</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-opacity-90" type="button">
+              PDF (1.9 MB)
+            </button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">English Site Summary</span>
+<span class="font-body-sm text-body-sm text-secondary">A4 Dual-Sided Technical Roster</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-opacity-90" type="button">
+              PDF (1.4 MB)
+            </button>
+</div>
+</div>
+<div class="pt-space-xs flex justify-end">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md" id="modal-done" type="button">
+            Done
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const checkboxes = document.querySelectorAll('.timeline-check');
+    const counter = document.getElementById('completion-counter');
+    const toggleBtn = document.getElementById('btn-toggle-all');
+    const toast = document.getElementById('toast-msg');
+    const toastText = document.getElementById('toast-text');
+    const smsBtn = document.getElementById('btn-export-sms');
+    const quickSms = document.getElementById('btn-quick-sms');
+    const pdfBtn = document.getElementById('btn-pdf-modal');
+    const modal = document.getElementById('poster-modal');
+    const modalClose = document.getElementById('modal-close');
+    const modalDone = document.getElementById('modal-done');
+
+    function updateCounter() {
+      const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+      const total = checkboxes.length;
+      if (counter) {
+        counter.textContent = `${checked} / ${total} Protocols Verified`;
+      }
+      if (toggleBtn) {
+        toggleBtn.textContent = (checked === total) ? 'Uncheck All' : 'Check All';
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', updateCounter);
+    });
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const anyUnchecked = Array.from(checkboxes).some(cb => !cb.checked);
+        checkboxes.forEach(cb => { cb.checked = anyUnchecked; });
+        updateCounter();
+      });
+    }
+
+    function showToast(message) {
+      if (!toast || !toastText) return;
+      toastText.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    if (smsBtn) {
+      smsBtn.addEventListener('click', () => {
+        showToast('SMS Alert dispatched to Sealdah Site Supervisor & 12 pairs.');
+      });
+    }
+
+    if (quickSms) {
+      quickSms.addEventListener('click', () => {
+        showToast('Hydration & 40m/20m rotation reminder sent via SMS gateway.');
+      });
+    }
+
+    if (pdfBtn && modal) {
+      pdfBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+      });
+    }
+
+    if (modalClose && modal) {
+      modalClose.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    }
+
+    if (modalDone && modal) {
+      modalDone.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    }
+
+    updateCounter();
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,29 @@
+import pytest
+from httpx import AsyncClient, ASGITransport
+from app.main import app
+
+
+@pytest.mark.asyncio
+async def test_health_endpoint():
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        response = await client.get("/health")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["status"] == "healthy"
+        assert data["service"] == "HeatShield Sentinel"
+        assert "demo_mode" in data
+        assert "aws_configured" in data
+
+
+@pytest.mark.asyncio
+async def test_status_endpoint():
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as client:
+        response = await client.get("/api/v1/status")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["status"] == "healthy"
+        assert "weather_provider" in data
+        assert "resource_count" in data
+        assert data["resource_count"] >= 1

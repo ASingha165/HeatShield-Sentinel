@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#00130a","tertiary-fixed":"#ffdcc3","secondary":"#5a605c","on-primary-fixed":"#062016","on-primary-container":"#769283","on-secondary-fixed-variant":"#434844","on-error":"#ffffff","on-error-container":"#93000a","inverse-primary":"#b0cdbd","surface-container-low":"#f1f5f2","on-background":"#181d1b","error-container":"#ffdad6","surface-variant":"#dfe3e1","surface-tint":"#4a6457","surface-dim":"#d7dbd8","secondary-fixed-dim":"#c3c8c3","on-surface-variant":"#424844","on-secondary":"#ffffff","on-primary":"#ffffff","primary-fixed":"#cce9d8","on-tertiary-container":"#d27200","on-primary-fixed-variant":"#324c3f","surface-container-high":"#e5e9e6","tertiary":"#1c0a00","on-tertiary":"#ffffff","surface-container":"#ebefec","background":"#f6faf7","inverse-surface":"#2d3130","on-tertiary-fixed-variant":"#6e3900","surface":"#f6faf7","inverse-on-surface":"#eef2ef","primary-container":"#0f291e","on-secondary-container":"#606662","tertiary-fixed-dim":"#ffb77d","secondary-container":"#dfe4df","tertiary-container":"#3b1c00","surface-container-lowest":"#ffffff","outline":"#727974","surface-bright":"#f6faf7","error":"#ba1a1a","outline-variant":"#c2c8c2","on-surface":"#181d1b","surface-container-highest":"#dfe3e1","on-tertiary-fixed":"#2f1500","primary-fixed-dim":"#b0cdbd","on-secondary-fixed":"#181d1a","secondary-fixed":"#dfe4df"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1.25rem","margin-desktop":"2.5rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","margin-tablet":"1.5rem","margin":"1rem"},"fontFamily":{"label-lg":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"label-caps":["Inter"],"metric-display":["Inter"],"body-lg":["Inter"],"metric-display-mobile":["Inter"],"display-lg-mobile":["Inter"],"display-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"metric-display":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"metric-display-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex items-start gap-space-sm bg-surface-container-lowest"><img alt="HeatShield Sentinel Brand Mark" class="h-8 w-auto object-contain flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida/AEtjO1Ve1GySMkA05HLBiZYHGQQQkIyYtnHcSGMgmC59KOp8V7aQ0qP1xxzyznR4ykrdxG_SAjfFqeYvdtT5dB5qxch3LDIW3NGVBF1pjCUWHLoip6OwdzN17fbZ2UcYYpIbBxhGaWtZfr6Nv5s49wI1mjIPsrvWw9EhdwrT38zXk-eCThm_aJwcad-fJO8gZsYdQls9CbMvMGJDb82OisDsdXnt5RBvhkU_LTaOyfou-VJCNw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">HeatShield Sentinel</span><span class="font-label-caps text-label-caps text-secondary uppercase">Climate &amp; Occupational Safety</span></div></div><nav class="flex flex-col gap-space-xs px-space-md py-space-lg" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Command Center</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-all bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="worker-assessment" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Worker Assessment</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safe-work-planner" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Safe Work Planner</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="heat-risk-intelligence" href="#"><span class="material-symbols-outlined text-[20px]">thermostat</span><span>Heat Risk Intelligence</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cooling-resources" href="#"><span class="material-symbols-outlined text-[20px]">water_drop</span><span>Cooling Resources</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="community-insights" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>Community Insights</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="about-the-system" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span>About the System</span></a></nav></div><div class="p-space-md m-space-md bg-surface-container-lowest rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-secondary uppercase">Demonstration Mode</span><span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><div class="font-label-md text-label-md text-on-surface">Kolkata, WB Urban Sector</div><div class="flex items-center justify-between pt-space-xs"><span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant">Updated 12m ago</span><span class="font-label-caps text-label-caps text-on-surface-variant">Operational 100%</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-md text-label-md text-on-surface">Kolkata, West Bengal (Barabazar / Sealdah Ward 48)</span><span class="ml-1 inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-surface-container text-secondary">Live Weather API + IMD Alert Sync</span></div><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps"><span class="material-symbols-outlined text-[14px]">warning</span>DEMO DATA ACTIVE</div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-lowest rounded-lg p-0.5 font-label-caps text-label-caps text-secondary"><span class="px-2 py-1 rounded bg-primary-container text-on-primary font-bold">EN active</span><button class="px-2 py-1 hover:text-on-surface transition-colors" type="button">বাংলা</button><button class="px-2 py-1 hover:text-on-surface transition-colors" type="button">हिंदी</button></div><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md hover:bg-error-container hover:text-on-error-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span>Heat Illness Protocol 108</button><div class="relative flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-caps text-[9px]">1</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Ananya Sen</span><span class="font-label-caps text-label-caps text-secondary">Safety Field Lead</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ6Kd_7zbLFvbowPH7sHMd5A8QkPEenyCt16fgJQRSXe1NH8TYQ3fUlS4SGNpZj-8GQTuNWIVXfoa2hbCnQi5UFdrmWb7jO-dvFXNDiAdScgifsRBryCVboSrKE3GcyuF5YE1DNe9PWLFFcRlRw5ojBOUC4BvD8PJRG1FSUqCn4IFN7X0taBFz42QU0WGhc0oIsXxRUMCtBYklV9Y97QfC8YN2zt5Zt1eNIRhR3zyZ"/></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1360px] mx-auto w-full flex flex-col gap-space-lg">
+<!-- Progress / Context Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+            NIOSH / ISO 7243 ALIGNED
+          </span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Form Ref: HSR-2025-04</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Occupational Heat-Exposure Risk Assessment Wizard</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl">Evaluate worker-specific heat vulnerability to generate personalized, evidence-based safety guidance. No medical diagnosis or sensitive PII required.</p>
+</div>
+<!-- Live Calculated Burden Tag -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Projected Thermal Class</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold flex items-center gap-1.5" id="live-risk-badge">
+<span class="material-symbols-outlined text-[20px] text-error">warning</span>
+            High Vulnerability (Level 3)
+          </span>
+</div>
+<div class="h-10 w-px bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Est. Metabolic Rate</span>
+<span class="font-label-lg text-label-lg text-on-surface" id="live-metabolic-rate">~415 W / Heavy</span>
+</div>
+</div>
+</div>
+<!-- Stepper Navigation Indicator -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<!-- Step 1 -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Step 01</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Profile &amp; Sector</span>
+</div>
+</div>
+<!-- Step 2 (Active) -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-primary-container text-on-primary shadow-sm">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-caps text-label-caps">
+            02
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-on-primary-container uppercase">Step 02 (Current)</span>
+<span class="font-label-md text-label-md text-on-primary truncate">Exposure &amp; Intensity</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low opacity-80">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-secondary flex items-center justify-center font-label-caps text-label-caps">
+            03
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Step 03</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Hydration &amp; Rest</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low opacity-80">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-secondary flex items-center justify-center font-label-caps text-label-caps">
+            04
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Step 04</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Environment &amp; Gear</span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low opacity-80">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-secondary flex items-center justify-center font-label-caps text-label-caps">
+            05
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Step 05</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Plan Synthesis</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Assessment Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Wizard Form (8 Columns) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Section 1: Work Profile Category -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">engineering</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Occupational Trade &amp; Micro-Environment</h2>
+<p class="font-body-sm text-body-sm text-secondary">Select baseline trade archetype to calibrate metabolic base calculations.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Mandatory</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm" id="trade-grid">
+<!-- Trade 1: Selected -->
+<button class="trade-card text-left p-space-md rounded-xl bg-primary text-on-primary shadow-sm flex flex-col justify-between h-36 transition-all" data-trade="construction" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[26px] text-primary-fixed">foundation</span>
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg block text-on-primary">Construction &amp; Masonry</span>
+<span class="font-body-sm text-body-sm text-surface-container-high">Reinforced concrete, rebar, direct sun</span>
+</div>
+</button>
+<!-- Trade 2 -->
+<button class="trade-card text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all flex flex-col justify-between h-36" data-trade="vendor" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[26px] text-secondary">storefront</span>
+<span class="material-symbols-outlined text-[20px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg block text-on-surface">Street Vendor / Hawker</span>
+<span class="font-body-sm text-body-sm text-secondary">Asphalt reflection, low air movement</span>
+</div>
+</button>
+<!-- Trade 3 -->
+<button class="trade-card text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all flex flex-col justify-between h-36" data-trade="delivery" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[26px] text-secondary">moped</span>
+<span class="material-symbols-outlined text-[20px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg block text-on-surface">Two-Wheeler Delivery</span>
+<span class="font-body-sm text-body-sm text-secondary">Engine radiant heat, vehicular fumes</span>
+</div>
+</button>
+<!-- Trade 4 -->
+<button class="trade-card text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all flex flex-col justify-between h-36" data-trade="agriculture" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[26px] text-secondary">agriculture</span>
+<span class="material-symbols-outlined text-[20px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg block text-on-surface">Agricultural Laborer</span>
+<span class="font-body-sm text-body-sm text-secondary">High canopy humidity, field exposure</span>
+</div>
+</button>
+<!-- Trade 5 -->
+<button class="trade-card text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all flex flex-col justify-between h-36" data-trade="sanitation" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[26px] text-secondary">recycling</span>
+<span class="material-symbols-outlined text-[20px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg block text-on-surface">Sanitation &amp; Municipal</span>
+<span class="font-body-sm text-body-sm text-secondary">Constant lifting, bio-thermal stress</span>
+</div>
+</button>
+<!-- Trade 6 -->
+<button class="trade-card text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all flex flex-col justify-between h-36" data-trade="other" type="button">
+<div class="flex items-start justify-between">
+<span class="material-symbols-outlined text-[26px] text-secondary">handyman</span>
+<span class="material-symbols-outlined text-[20px] text-surface-variant">radio_button_unchecked</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg block text-on-surface">Other Outdoor Labor</span>
+<span class="font-body-sm text-body-sm text-secondary">General manual exposure profile</span>
+</div>
+</button>
+</div>
+<!-- Workplace Micro-location pill note -->
+<div class="p-space-sm bg-surface-container rounded-lg flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">location_on</span>
+<span class="font-label-md text-label-md">Worksite Geofence: <strong>Central Kolkata (Sealdah Ward 48)</strong></span>
+</div>
+<span class="font-label-caps text-label-caps text-on-secondary-container bg-surface-container-highest px-2 py-0.5 rounded">High Thermal Mass UHI</span>
+</div>
+</section>
+<!-- Section 2: Shift Exposure Duration & Metabolic Intensity -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Outdoor Exposure Duration &amp; Metabolic Intensity</h2>
+<p class="font-body-sm text-body-sm text-secondary">Cumulative time under solar load and internal body heat generation.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Parameters</span>
+</div>
+<!-- Duration Segmented Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Outdoor Shift Duration (Direct Sun / Ambient Air)</span>
+<span class="font-label-caps text-label-caps text-secondary">Daily Cumulative</span>
+</label>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-xs p-1 bg-surface-container-low rounded-lg" id="duration-selector">
+<button class="duration-pill py-2.5 px-3 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface text-center transition-all" data-duration="2" type="button">&lt; 2 Hours</button>
+<button class="duration-pill py-2.5 px-3 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface text-center transition-all" data-duration="4" type="button">2 – 4 Hours</button>
+<button class="duration-pill py-2.5 px-3 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface text-center transition-all" data-duration="6" type="button">4 – 6 Hours</button>
+<button class="duration-pill py-2.5 px-3 rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm text-center transition-all font-bold" data-duration="8" type="button">6 – 8 Hours (Selected)</button>
+<button class="duration-pill py-2.5 px-3 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface text-center transition-all" data-duration="10" type="button">&gt; 8 Hours</button>
+</div>
+</div>
+<!-- Metabolic Intensity Cards -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between">
+<span>Physical Intensity &amp; Metabolic Exertion</span>
+<span class="font-label-caps text-label-caps text-secondary">ISO 8996 Categorization</span>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm" id="intensity-grid">
+<!-- Light -->
+<div class="intensity-card p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between" data-intensity="light">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg text-on-surface">Light Work</span>
+<span class="font-label-caps text-label-caps text-secondary bg-surface-container px-2 py-0.5 rounded">&lt;200 W</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-3">Intermittent inspection, standing, operating small power controls, light hand tools.</p>
+<div class="flex items-center gap-1.5 text-secondary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span>Select Intensity</span>
+</div>
+</div>
+<!-- Moderate -->
+<div class="intensity-card p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between" data-intensity="moderate">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg text-on-surface">Moderate Work</span>
+<span class="font-label-caps text-label-caps text-secondary bg-surface-container px-2 py-0.5 rounded">200–350 W</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-3">Sustained walking, carrying gear up to 10kg, plastering, continuous surface sweeping.</p>
+<div class="flex items-center gap-1.5 text-secondary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+<span>Select Intensity</span>
+</div>
+</div>
+<!-- Heavy: Selected -->
+<div class="intensity-card p-space-md rounded-xl bg-tertiary-container text-on-tertiary shadow-sm cursor-pointer transition-all flex flex-col justify-between" data-intensity="heavy">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg text-tertiary-fixed font-bold">Heavy / Strenuous</span>
+<span class="font-label-caps text-label-caps text-on-tertiary-fixed bg-tertiary-fixed px-2 py-0.5 rounded font-bold">&gt;350 W</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mb-3">Shoveling wet concrete, bricklaying, scaffolding, repetitive manual lifting &gt;20kg.</p>
+<div class="flex items-center gap-1.5 text-tertiary-fixed font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Active Selection</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Hydration & Workplace Resource Access -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">water_bottle</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Hydration Facilities &amp; Cooling Infrastructure</h2>
+<p class="font-body-sm text-body-sm text-secondary">Availability of potable chilled water and high-grade thermal respite areas.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Critical Barrier</span>
+</div>
+<!-- Water Access Options -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">Drinking Water Availability On-Site</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5">radio_button_unchecked</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Continuous Chilled Water Supply</span>
+<span class="font-body-sm text-body-sm text-secondary">Unlimited fresh drinking water within &lt;30m radius of active work zone.</span>
+</div>
+</div>
+<!-- Selected Water Access -->
+<div class="p-space-md rounded-xl bg-primary text-on-primary shadow-sm cursor-pointer transition-all flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-primary">Periodic Access / Walk &gt;100m (Selected)</span>
+<span class="font-body-sm text-body-sm text-surface-container-high">Refill point requires stepping off scaffolding / crossing road; leads to delayed intake.</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5">radio_button_unchecked</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Self-Carried Only (&lt; 1.5 Liters)</span>
+<span class="font-body-sm text-body-sm text-secondary">Individual flask that runs out before mid-shift; no potable on-site tap.</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5">radio_button_unchecked</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">No Reliable Potable Water</span>
+<span class="font-body-sm text-body-sm text-secondary">Dependent on commercial purchase or unverified municipal ground runoff.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Shade Availability Options -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">Shaded Rest Shelter Infrastructure</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between h-28">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Permanent Insulated Shelter</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">radio_button_unchecked</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Solid canopy, active misting or ceiling fans, cross-breeze.</span>
+</div>
+<!-- Selected Shade -->
+<div class="p-space-md rounded-xl bg-primary text-on-primary shadow-sm cursor-pointer transition-all flex flex-col justify-between h-28">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-primary">Makeshift / Tarpaulin Only</span>
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-container-high">Trap heat beneath plastic tarps, minimal ventilation.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between h-28">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Zero Shade Available</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">radio_button_unchecked</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Direct unbroken solar exposure during entire shift.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Clothing & Protective Equipment (PPE) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">dry_cleaning</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Garment Insulation &amp; Mandatory PPE</h2>
+<p class="font-body-sm text-body-sm text-secondary">Apparel acts as a thermal barrier restricting natural evaporative sweat cooling.</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Evaporative Factor</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface">Breathable Cotton</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">radio_button_unchecked</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Single loose layer, head towel, unrestrictive air permeation.</p>
+<span class="font-label-caps text-label-caps text-secondary mt-2">Clo Value: ~0.4</span>
+</div>
+<!-- Selected PPE -->
+<div class="p-space-md rounded-xl bg-primary text-on-primary shadow-sm cursor-pointer transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-primary">Heavy Vest, Boots &amp; Helmet</span>
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-high">Mandatory industrial hardhat, safety boots, thick reflective poly vest.</p>
+<span class="font-label-caps text-label-caps text-primary-fixed mt-2">Clo Value: ~1.1 (+2.8°C WBGT Penalty)</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface">Impermeable Coveralls</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">radio_button_unchecked</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Chemical/dust hazmat suits, zero skin transpiration ability.</p>
+<span class="font-label-caps text-label-caps text-secondary mt-2">Clo Value: ~1.8 (+6.0°C WBGT Penalty)</span>
+</div>
+</div>
+</section>
+<!-- Privacy & Non-PII Assurance Callout -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-primary-fixed">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Privacy Protected Assessment Framework</span>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">HeatShield Sentinel does not ask for personal medical records, national identifiers, or individual names. All assessments evaluate purely situational thermal burden and occupational exposure metrics.</p>
+</div>
+</div>
+<!-- Wizard Navigation & Generation Action Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              Back to Trade Selection
+            </button>
+<button class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary font-label-lg text-label-lg transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+              Save Shift Draft
+            </button>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<div class="hidden xl:flex items-center gap-1.5 text-on-surface font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-variant">check_circle</span>
+<span>All mandatory factors complete</span>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center justify-center gap-2" id="generate-plan-btn" type="button">
+<span>Review &amp; Generate Safe Work Plan</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Live Physiological Telemetry & Micro-Climate Simulator (4 Columns) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Interactive Thermal Vulnerability Radar -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Live Risk Synthesis</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-error-container text-on-error-container font-bold">CRITICAL EXPOSURE</span>
+</div>
+<!-- High-Contrast WBGT Segmented Gauge -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-baseline">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">WBGT 33.4°C</span>
+<span class="font-label-md text-label-md text-error font-bold">+2.8°C Clothing Adj.</span>
+</div>
+<!-- Segmented Gauge Strip -->
+<div class="w-full h-3 rounded-full bg-surface-container-high flex overflow-hidden p-0.5 gap-0.5">
+<div class="h-full w-1/4 rounded-l-full bg-surface-tint opacity-40"></div>
+<div class="h-full w-1/4 bg-primary-fixed opacity-70"></div>
+<div class="h-full w-1/4 bg-tertiary-fixed-dim"></div>
+<div class="h-full w-1/4 rounded-r-full bg-error relative">
+<!-- Marker Needle -->
+<div class="absolute -top-1 right-2 w-1.5 h-5 bg-primary rounded-full shadow-md"></div>
+</div>
+</div>
+<div class="flex justify-between font-label-caps text-[10px] text-secondary">
+<span>Safe (&lt;28°C)</span>
+<span>Caution</span>
+<span>Extreme</span>
+<span class="text-error font-bold">Danger (&gt;32°C)</span>
+</div>
+</div>
+<!-- Radial Progress Ring: Evaporative Efficiency -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Sweat Evaporative Efficiency</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold">38%</span>
+<span class="font-body-sm text-body-sm text-secondary">High humidity impedes cooling</span>
+</div>
+<!-- Inline Mini SVG Progress Ring -->
+<div class="relative w-16 h-16 shrink-0">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-error" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="38, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-label-caps text-label-caps text-primary">
+                38%
+              </div>
+</div>
+</div>
+<!-- Suggested Immediate Shift Parameters -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Pre-Computed Work-Rest Protocol</span>
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-secondary-container">Standard Ratio</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">30m Work / 30m Rest</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">timelapse</span>
+</div>
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-secondary-container">Target Hydration</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1.0 L / Hour</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">local_drink</span>
+</div>
+</div>
+</div>
+<!-- Worksite Field Photo & Environmental Context -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Site Condition Verification</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Live Cam #04</span>
+</div>
+<!-- Field Photo Placeholder with high-fidelity prompt -->
+<div class="relative rounded-xl overflow-hidden h-48 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Indian outdoor construction laborers wearing yellow hardhats and high visibility vests carrying masonry cement under blazing white sunlight on a concrete structure in Kolkata, sharp shadows, heat shimmer, documentary photojournalism style, natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhckAdbmqHrU2vLOivpEcHtmuEcU97XBLuy0mayZghuba6muvroJdbnXN5XuEUH77SC4uLN0uQW-kt_NR5dCPB4tprNRSJxlCl3vpE4mQRt-n-vNHN1iSmkLKY_-muRWEW-dOn9bwtUm6Wbb4KLAben51TC9nm4W2mLcoU2ytCE2WKEbDUZPx2Q6aydE6DhoGkR4KJbfUbdoE57_vIoJRAqZro34r_1rQcQk2wwmY2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md">Sealdah Rebar Site #08</span>
+<span class="font-label-caps text-label-caps text-surface-container-high">Surface Temp: 49.2°C (Asphalt/Concrete)</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<!-- Hourly Danger Heat Anomaly Sparkline Matrix -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Shift Solar Radiance Curve (10:00 - 18:00)</span>
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-2">
+<div class="flex justify-between items-center text-secondary font-label-caps text-label-caps">
+<span>11 AM: 31°C WBGT</span>
+<span class="text-error font-bold">14 PM PEAK: 34.6°C</span>
+<span>17 PM: 32°C</span>
+</div>
+<!-- Sparkline Visual -->
+<svg class="w-full h-12 text-error" fill="none" viewbox="0 0 200 40">
+<path d="M 0 32 Q 30 28, 60 18 T 120 4 T 160 14 T 200 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M 0 32 Q 30 28, 60 18 T 120 4 T 160 14 T 200 24 L 200 40 L 0 40 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle class="fill-error stroke-surface-container-lowest" cx="120" cy="4" r="3.5" stroke-width="2"></circle>
+</svg>
+<div class="flex items-center justify-between font-label-caps text-[10px] text-secondary">
+<span>Moderate Rest Protocol</span>
+<span class="text-error font-bold">MANDATORY ROTATION WINDOW</span>
+</div>
+</div>
+</div>
+<!-- Secondary Quick Help Card -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">contact_support</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Need Supervisor Assistance?</span>
+<span class="font-body-sm text-body-sm text-secondary">Field Safety Lead is on dispatch standby.</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Client-side Interactive Micro-interaction Script -->
+<script>
+    (function initWizardInteractions() {
+      // Trade Card Selectors
+      const tradeCards = document.querySelectorAll('.trade-card');
+      tradeCards.forEach(card => {
+        card.addEventListener('click', () => {
+          tradeCards.forEach(c => {
+            c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            c.classList.add('bg-surface-container-low', 'text-on-surface');
+            const icon = c.querySelector('.material-symbols-outlined:last-child');
+            if (icon) {
+              icon.textContent = 'radio_button_unchecked';
+              icon.classList.remove('text-primary-fixed');
+              icon.classList.add('text-surface-variant');
+            }
+          });
+          card.classList.remove('bg-surface-container-low', 'text-on-surface');
+          card.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+          const activeIcon = card.querySelector('.material-symbols-outlined:last-child');
+          if (activeIcon) {
+            activeIcon.textContent = 'check_circle';
+            activeIcon.classList.remove('text-surface-variant');
+            activeIcon.classList.add('text-primary-fixed');
+          }
+        });
+      });
+
+      // Duration Pills
+      const durationPills = document.querySelectorAll('.duration-pill');
+      durationPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          durationPills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm', 'font-bold');
+            p.classList.add('text-secondary');
+            p.textContent = p.textContent.replace(' (Selected)', '');
+          });
+          pill.classList.remove('text-secondary');
+          pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm', 'font-bold');
+          if (!pill.textContent.includes('(Selected)')) {
+            pill.textContent = pill.textContent + ' (Selected)';
+          }
+        });
+      });
+
+      // Plan generation micro-feedback
+      const generateBtn = document.getElementById('generate-plan-btn');
+      if (generateBtn) {
+        generateBtn.addEventListener('click', () => {
+          generateBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Synthesizing Protocol...';
+          setTimeout(() => {
+            generateBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">task_alt</span> Plan Generated Successfully';
+            generateBtn.classList.remove('bg-primary');
+            generateBtn.classList.add('bg-primary-container');
+          }, 650);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

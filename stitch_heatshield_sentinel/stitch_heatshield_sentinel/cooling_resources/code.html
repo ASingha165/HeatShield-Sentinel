@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#00130a","tertiary-fixed":"#ffdcc3","secondary":"#5a605c","on-primary-fixed":"#062016","on-primary-container":"#769283","on-secondary-fixed-variant":"#434844","on-error":"#ffffff","on-error-container":"#93000a","inverse-primary":"#b0cdbd","surface-container-low":"#f1f5f2","on-background":"#181d1b","error-container":"#ffdad6","surface-variant":"#dfe3e1","surface-tint":"#4a6457","surface-dim":"#d7dbd8","secondary-fixed-dim":"#c3c8c3","on-surface-variant":"#424844","on-secondary":"#ffffff","on-primary":"#ffffff","primary-fixed":"#cce9d8","on-tertiary-container":"#d27200","on-primary-fixed-variant":"#324c3f","surface-container-high":"#e5e9e6","tertiary":"#1c0a00","on-tertiary":"#ffffff","surface-container":"#ebefec","background":"#f6faf7","inverse-surface":"#2d3130","on-tertiary-fixed-variant":"#6e3900","surface":"#f6faf7","inverse-on-surface":"#eef2ef","primary-container":"#0f291e","on-secondary-container":"#606662","tertiary-fixed-dim":"#ffb77d","secondary-container":"#dfe4df","tertiary-container":"#3b1c00","surface-container-lowest":"#ffffff","outline":"#727974","surface-bright":"#f6faf7","error":"#ba1a1a","outline-variant":"#c2c8c2","on-surface":"#181d1b","surface-container-highest":"#dfe3e1","on-tertiary-fixed":"#2f1500","primary-fixed-dim":"#b0cdbd","on-secondary-fixed":"#181d1a","secondary-fixed":"#dfe4df"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","gutter":"1.25rem","margin-desktop":"2.5rem","space-xs":"0.25rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","margin-tablet":"1.5rem","margin":"1rem"},"fontFamily":{"label-lg":["Inter"],"headline-sm":["Inter"],"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"label-caps":["Inter"],"metric-display":["Inter"],"body-lg":["Inter"],"metric-display-mobile":["Inter"],"display-lg-mobile":["Inter"],"display-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"metric-display":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"metric-display-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="p-space-lg flex items-start gap-space-sm bg-surface-container-lowest"><img alt="HeatShield Sentinel Brand Mark" class="h-8 w-auto object-contain flex-shrink-0 mt-0.5" src="https://lh3.googleusercontent.com/aida/AEtjO1Ve1GySMkA05HLBiZYHGQQQkIyYtnHcSGMgmC59KOp8V7aQ0qP1xxzyznR4ykrdxG_SAjfFqeYvdtT5dB5qxch3LDIW3NGVBF1pjCUWHLoip6OwdzN17fbZ2UcYYpIbBxhGaWtZfr6Nv5s49wI1mjIPsrvWw9EhdwrT38zXk-eCThm_aJwcad-fJO8gZsYdQls9CbMvMGJDb82OisDsdXnt5RBvhkU_LTaOyfou-VJCNw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">HeatShield Sentinel</span><span class="font-label-caps text-label-caps text-secondary uppercase">Climate &amp; Occupational Safety</span></div></div><nav class="flex flex-col gap-space-xs px-space-md py-space-lg" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Command Center</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="worker-assessment" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Worker Assessment</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="safe-work-planner" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Safe Work Planner</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="heat-risk-intelligence" href="#"><span class="material-symbols-outlined text-[20px]">thermostat</span><span>Heat Risk Intelligence</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 transition-all bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="cooling-resources" href="#"><span class="material-symbols-outlined text-[20px]">water_drop</span><span>Cooling Resources</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="community-insights" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>Community Insights</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="about-the-system" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span>About the System</span></a></nav></div><div class="p-space-md m-space-md bg-surface-container-lowest rounded-xl flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-secondary uppercase">Demonstration Mode</span><span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span></div><div class="font-label-md text-label-md text-on-surface">Kolkata, WB Urban Sector</div><div class="flex items-center justify-between pt-space-xs"><span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-surface-container text-on-surface-variant">Updated 12m ago</span><span class="font-label-caps text-label-caps text-on-surface-variant">Operational 100%</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-md text-label-md text-on-surface">Kolkata, West Bengal (Barabazar / Sealdah Ward 48)</span><span class="ml-1 inline-flex items-center px-2 py-0.5 rounded-full font-label-caps text-label-caps bg-surface-container text-secondary">Live Weather API + IMD Alert Sync</span></div><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps"><span class="material-symbols-outlined text-[14px]">warning</span>DEMO DATA ACTIVE</div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-lowest rounded-lg p-0.5 font-label-caps text-label-caps text-secondary"><span class="px-2 py-1 rounded bg-primary-container text-on-primary font-bold">EN active</span><button class="px-2 py-1 hover:text-on-surface transition-colors" type="button">বাংলা</button><button class="px-2 py-1 hover:text-on-surface transition-colors" type="button">हिंदी</button></div><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md hover:bg-error-container hover:text-on-error-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span>Heat Illness Protocol 108</button><div class="relative flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-caps text-[9px]">1</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Ananya Sen</span><span class="font-label-caps text-label-caps text-secondary">Safety Field Lead</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ6Kd_7zbLFvbowPH7sHMd5A8QkPEenyCt16fgJQRSXe1NH8TYQ3fUlS4SGNpZj-8GQTuNWIVXfoa2hbCnQi5UFdrmWb7jO-dvFXNDiAdScgifsRBryCVboSrKE3GcyuF5YE1DNe9PWLFFcRlRw5ojBOUC4BvD8PJRG1FSUqCn4IFN7X0taBFz42QU0WGhc0oIsXxRUMCtBYklV9Y97QfC8YN2zt5Zt1eNIRhR3zyZ"/></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Operational Sub-Header Bar -->
+<div class="px-margin-desktop py-space-lg bg-surface-container-low flex flex-col md:flex-row md:items-end justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps">
+<span class="h-1.5 w-1.5 rounded-full bg-surface-tint"></span>
+          WARD 48–52 SECTOR SURVEILLANCE
+        </span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">KMC Urban Relief Grid</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Verified Community Cooling &amp; Hydration Network</h1>
+<p class="font-body-md text-body-md text-secondary max-w-3xl">
+        Real-time municipal inventory of verified chilled drinking water kiosks, air-conditioned civic refuges, and shaded rest canopies across Central Kolkata.
+      </p>
+</div>
+<!-- Live Telemetry Quick Counter Pill -->
+<div class="flex items-center gap-3 bg-surface-container-lowest px-4 py-2.5 rounded-xl shadow-sm self-start md:self-auto">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Active Refuges</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">18 / 19 Live</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Hydration Volume</span>
+<span class="font-headline-sm text-headline-sm text-surface-tint font-bold">4,200 L/hr</span>
+</div>
+</div>
+</div>
+<!-- Search, Category Filters & Spatial Controls -->
+<div class="px-margin-desktop py-space-md bg-surface-container flex flex-col gap-space-sm shadow-sm z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search Field -->
+<div class="lg:col-span-6 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-secondary pointer-events-none">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-secondary shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="facilitySearchInput" placeholder="Search by neighborhood, landmark, or ward (e.g. Sealdah, College St, Bowbazar)..." type="text"/>
+</div>
+<!-- Quick Dropdown Filters -->
+<div class="lg:col-span-4 flex items-center gap-2">
+<div class="relative flex-1">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-2.5 rounded-lg shadow-sm focus:outline-none cursor-pointer pr-8">
+<option>Verification: Verified Only (100%)</option>
+<option>All Triage Points</option>
+<option>Pending Field Audit</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-secondary pointer-events-none">expand_more</span>
+</div>
+<div class="relative flex-1">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-2.5 rounded-lg shadow-sm focus:outline-none cursor-pointer pr-8">
+<option>Radius: ≤ 1.5 km (Walking)</option>
+<option>Radius: ≤ 3.0 km</option>
+<option>Whole Ward Cluster</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-secondary pointer-events-none">near_me</span>
+</div>
+</div>
+<!-- View Switcher & Action -->
+<div class="lg:col-span-2 flex items-center justify-end gap-2">
+<div class="flex bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md transition-all" id="viewMapBtn">
+<span class="material-symbols-outlined text-[16px]">map</span>
+<span>Map</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-secondary hover:text-on-surface font-label-md text-label-md transition-all" id="viewListBtn">
+<span class="material-symbols-outlined text-[16px]">view_agenda</span>
+<span>Cards</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Category Pills Strip -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-nowrap scrollbar-none" id="categoryFilterBar">
+<button class="cat-pill active-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary flex items-center gap-1.5 transition-all" data-cat="all">
+<span>All Facilities</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface/20 text-[10px]">18</span>
+</button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" data-cat="water">
+<span class="material-symbols-outlined text-[15px] text-[#0284c7]">water_drop</span>
+<span>Drinking Water Points</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-[10px] text-on-surface font-semibold">8</span>
+</button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" data-cat="cooling">
+<span class="material-symbols-outlined text-[15px] text-[#15803d]">ac_unit</span>
+<span>Cooling Shelters &amp; Halls</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-[10px] text-on-surface font-semibold">4</span>
+</button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" data-cat="shade">
+<span class="material-symbols-outlined text-[15px] text-[#d97706]">beach_access</span>
+<span>Shaded Rest Pavilions</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-[10px] text-on-surface font-semibold">4</span>
+</button>
+<button class="cat-pill px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-secondary hover:text-on-surface shadow-sm flex items-center gap-1.5 transition-all" data-cat="medical">
+<span class="material-symbols-outlined text-[15px] text-[#dc2626]">medical_services</span>
+<span>Heat First Aid &amp; Triage</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-[10px] text-on-surface font-semibold">2</span>
+</button>
+</div>
+</div>
+<!-- Dual Split Main Workspace (60% Map Canvas, 40% Verified Cards) -->
+<div class="px-margin-desktop py-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Interactive Vector Street Map Canvas (60% on desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-3 sticky top-20">
+<div class="relative w-full h-[620px] rounded-xl overflow-hidden shadow-sm bg-[#e8eee9]">
+<!-- Cartographic Visual Foundation (SVG Urban Grid Architecture) -->
+<svg class="absolute inset-0 w-full h-full text-surface-tint/20" fill="none" preserveaspectratio="xMidYMid slice" viewbox="0 0 800 620" xmlns="http://www.w3.org/2000/svg">
+<!-- Background landmass tint variation -->
+<rect fill="#e9eee9" height="620" width="800"></rect>
+<!-- Green Park / Open Space Zone (College Square / Mirzapur Tank) -->
+<path d="M430 190 C450 170, 520 180, 530 240 C535 290, 480 320, 420 310 C380 300, 390 220, 430 190 Z" fill="#cbe2d3" opacity="0.8"></path>
+<path d="M440 210 C460 200, 500 205, 510 245 C515 275, 480 295, 440 285 C410 280, 415 225, 440 210 Z" fill="#9bc4a8" opacity="0.6"></path>
+<text class="font-label-caps text-[10px] tracking-widest font-bold opacity-75" fill="#324c3f" x="445" y="255">COLLEGE SQUARE TANK</text>
+<!-- Major Urban Thoroughfares (Central Kolkata Transit Arteries) -->
+<!-- Mahatma Gandhi Road (Horizontal Trunk) -->
+<path d="M-20 220 L820 220" stroke="#d5dcd6" stroke-linecap="round" stroke-width="26"></path>
+<path d="M-20 220 L820 220" stroke="#ffffff" stroke-linecap="round" stroke-width="16"></path>
+<text class="font-label-caps text-[10px] font-bold tracking-wider" fill="#5a605c" x="120" y="214">MAHATMA GANDHI ROAD (MG ROAD)</text>
+<!-- Acharya Prafulla Chandra (APC) Road (East Arterial Spine) -->
+<path d="M620 -20 L580 640" stroke="#d5dcd6" stroke-linecap="round" stroke-width="32"></path>
+<path d="M620 -20 L580 640" stroke="#ffffff" stroke-linecap="round" stroke-width="20"></path>
+<text class="font-label-caps text-[10px] font-bold tracking-wider" fill="#5a605c" transform="rotate(85 595 110)" x="595" y="110">ACHARYA PRAFULLA CHANDRA RD (APC RD)</text>
+<!-- College Street (Vertical Spine) -->
+<path d="M370 -20 L370 640" stroke="#d5dcd6" stroke-width="20"></path>
+<path d="M370 -20 L370 640" stroke="#ffffff" stroke-width="12"></path>
+<text class="font-label-caps text-[10px] font-bold tracking-wider" fill="#5a605c" transform="rotate(-90 360 90)" x="360" y="90">COLLEGE STREET</text>
+<!-- Bowbazar / Bipin Behari Ganguly Street -->
+<path d="M-20 440 L700 480" stroke="#d5dcd6" stroke-width="22"></path>
+<path d="M-20 440 L700 480" stroke="#ffffff" stroke-width="14"></path>
+<text class="font-label-caps text-[10px] font-bold tracking-wider" fill="#5a605c" x="140" y="446">BB GANGULY STREET (BOWBAZAR)</text>
+<!-- Sealdah Rail Complex Yard Track geometry -->
+<path d="M630 330 L820 310 M640 350 L820 330 M650 370 L820 350 M660 390 L820 370" stroke="#bcc6bf" stroke-dasharray="6,4" stroke-width="3"></path>
+<rect fill="#dfe5e0" height="90" opacity="0.8" rx="8" width="150" x="640" y="320"></rect>
+<text class="font-label-md text-label-md font-bold" fill="#424844" x="655" y="365">SEALDAH STATION</text>
+<text class="font-label-caps text-[9px]" fill="#606662" x="655" y="380">Eastern Railway Terminal Hub</text>
+<!-- Secondary Alleyway Grid -->
+<path d="M220 100 L220 540 M500 20 L500 170 M500 330 L500 590 M100 220 L100 440 M220 330 L370 330 M370 140 L620 140" stroke="#f1f5f2" stroke-width="6"></path>
+<!-- Thermal Heat Micro-Anomaly Overlay (Soft Heat Island contour) -->
+<circle cx="670" cy="370" fill="#d27200" opacity="0.08" r="110"></circle>
+<circle cx="280" cy="220" fill="#d27200" opacity="0.07" r="90"></circle>
+</svg>
+<!-- Dynamic Pin 1: KMC Free Chilled Water Kiosk #14 (Sealdah South Gate) -->
+<div class="facility-pin group absolute cursor-pointer transition-transform hover:scale-110" id="mapPin1" onclick="selectFacility('facility-1')" style="top: 365px; left: 615px;">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-[#0284c7] opacity-40"></span>
+<div class="relative h-10 w-10 rounded-full bg-[#0284c7] text-white flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<!-- Floating Label Capsule -->
+<div class="absolute bottom-11 left-1/2 -translate-x-1/2 bg-surface-container-lowest text-on-surface px-2.5 py-1 rounded-md shadow-md text-nowrap pointer-events-none hidden group-hover:flex items-center gap-1.5 z-20">
+<span class="h-2 w-2 rounded-full bg-[#0284c7]"></span>
+<span class="font-label-caps text-label-caps font-bold">KMC Chilled Water #14</span>
+<span class="font-label-caps text-[10px] text-secondary">250m</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Pin 2: Vidyasagar Community Cooling Refuge (Ward 49) -->
+<div class="facility-pin group absolute cursor-pointer transition-transform hover:scale-110" id="mapPin2" onclick="selectFacility('facility-2')" style="top: 155px; left: 345px;">
+<div class="relative flex items-center justify-center">
+<div class="relative h-11 w-11 rounded-full bg-[#15803d] text-white flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-[22px]">ac_unit</span>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 bg-surface-container-lowest text-on-surface px-2.5 py-1 rounded-md shadow-md text-nowrap pointer-events-none hidden group-hover:flex items-center gap-1.5 z-20">
+<span class="h-2 w-2 rounded-full bg-[#15803d]"></span>
+<span class="font-label-caps text-label-caps font-bold">Vidyasagar AC Hall (Ward 49)</span>
+<span class="font-label-caps text-[10px] text-secondary">18 Spots</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Pin 3: College Square Shaded Rest Pavilion -->
+<div class="facility-pin group absolute cursor-pointer transition-transform hover:scale-110" id="mapPin3" onclick="selectFacility('facility-3')" style="top: 245px; left: 460px;">
+<div class="relative flex items-center justify-center">
+<div class="relative h-10 w-10 rounded-full bg-[#d97706] text-white flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-[20px]">beach_access</span>
+</div>
+<div class="absolute bottom-11 left-1/2 -translate-x-1/2 bg-surface-container-lowest text-on-surface px-2.5 py-1 rounded-md shadow-md text-nowrap pointer-events-none hidden group-hover:flex items-center gap-1.5 z-20">
+<span class="h-2 w-2 rounded-full bg-[#d97706]"></span>
+<span class="font-label-caps text-label-caps font-bold">College Square Canopy</span>
+<span class="font-label-caps text-[10px] text-secondary">850m</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Pin 4: Calcutta Medical College Heat Triage Desk -->
+<div class="facility-pin group absolute cursor-pointer transition-transform hover:scale-110" id="mapPin4" onclick="selectFacility('facility-4')" style="top: 130px; left: 240px;">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-[#dc2626] opacity-30"></span>
+<div class="relative h-10 w-10 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-[20px]">local_hospital</span>
+</div>
+<div class="absolute bottom-11 left-1/2 -translate-x-1/2 bg-surface-container-lowest text-on-surface px-2.5 py-1 rounded-md shadow-md text-nowrap pointer-events-none hidden group-hover:flex items-center gap-1.5 z-20">
+<span class="h-2 w-2 rounded-full bg-[#dc2626]"></span>
+<span class="font-label-caps text-label-caps font-bold">Calcutta Med Heat Triage</span>
+<span class="font-label-caps text-[10px] text-secondary">IV Fluids Ready</span>
+</div>
+</div>
+</div>
+<!-- Simulated User Location Beacon -->
+<div class="absolute" style="top: 380px; left: 540px;">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute h-8 w-8 rounded-full bg-primary-container opacity-30"></span>
+<div class="h-4 w-4 rounded-full bg-primary-container border-2 border-white shadow-md"></div>
+<span class="absolute top-5 left-1/2 -translate-x-1/2 font-label-caps text-[9px] bg-primary text-white px-1.5 py-0.5 rounded shadow">You</span>
+</div>
+</div>
+<!-- Floating Map Utility Controls (Upper Left) -->
+<div class="absolute top-4 left-4 flex flex-col gap-2 z-10">
+<div class="flex flex-col bg-surface-container-lowest rounded-lg shadow-md overflow-hidden">
+<button class="p-2 hover:bg-surface-container text-on-surface transition-colors" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="h-px bg-surface-variant"></div>
+<button class="p-2 hover:bg-surface-container text-on-surface transition-colors" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 bg-surface-container-lowest hover:bg-surface-container text-primary px-3 py-2 rounded-lg shadow-md font-label-md text-label-md transition-colors" title="GPS Re-center">
+<span class="material-symbols-outlined text-[18px] text-primary">my_location</span>
+<span class="hidden sm:inline">Center on My GPS</span>
+</button>
+</div>
+<!-- Floating Legend & Heat Layer Toggles (Bottom Left) -->
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/95 backdrop-blur-md p-3 rounded-xl shadow-md max-w-xs flex flex-col gap-2 z-10">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">Facility Legend</span>
+<div class="grid grid-cols-2 gap-x-3 gap-y-1.5">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-[#0284c7]"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Chilled Water (8)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-[#15803d]"></span>
+<span class="font-body-sm text-body-sm text-on-surface">AC Shelter (4)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-[#d97706]"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Shaded Canopy (4)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-[#dc2626]"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Heat Triage (2)</span>
+</div>
+</div>
+<div class="pt-1 flex items-center justify-between text-[11px] text-secondary">
+<label class="flex items-center gap-1.5 cursor-pointer">
+<input checked="" class="accent-primary rounded" type="checkbox"/>
+<span class="font-label-caps text-label-caps">Show Heat Index Overlay</span>
+</label>
+</div>
+</div>
+<!-- Municipal Validation Disclaimer Badge (Top Right) -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2 max-w-xs z-10">
+<span class="material-symbols-outlined text-[16px] text-surface-tint">verified_user</span>
+<span class="font-label-caps text-[10px] text-secondary leading-tight">
+            Verified by KMC Borough V Field Sanitarians • Updated 28m ago
+          </span>
+</div>
+</div>
+<!-- Real-time Temperature & Transit Context Banner -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">thermostat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">WBGT 33.8°C</span>
+<span class="px-2 py-0.5 rounded-full bg-[#fee2e2] text-[#991b1b] font-label-caps text-[10px] font-bold">EXTREME STRESS</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Outdoor laborers should drink ≥ 250ml water every 15 minutes.</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors" onclick="document.getElementById('reportModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">add_location_alt</span>
+<span>Report / Add Point</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Verified Resource Cards Directory (40% on desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md" id="facilityCardsContainer">
+<!-- List Metadata Strip -->
+<div class="flex items-center justify-between px-1">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold tracking-wider">
+          Nearby Resources Sorted by Proximity
+        </span>
+<span class="font-label-md text-label-md text-surface-tint font-bold">
+          4 Points within 1.0 km
+        </span>
+</div>
+<!-- CARD 1: KMC Public Chilled Water Point - Sealdah Station -->
+<div class="facility-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-3 relative overflow-hidden group" id="facility-1">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#0284c7]"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex items-start gap-2.5">
+<div class="h-9 w-9 rounded-lg bg-[#e0f2fe] text-[#0284c7] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[10px] px-2 py-0.5 rounded-full bg-[#e0f2fe] text-[#0369a1] font-bold">DRINKING WATER POINT</span>
+<span class="font-label-caps text-label-caps text-secondary">Ward 48</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-0.5">
+                KMC Free Chilled Water Kiosk #14
+              </h3>
+<span class="font-body-sm text-body-sm text-secondary">Near Entry Gate 3, Sealdah Station Complex</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">250m</span>
+<span class="font-label-caps text-[10px] text-secondary">3 min walk</span>
+</div>
+</div>
+<!-- Verification & Operating Hours -->
+<div class="pl-2 flex flex-wrap items-center gap-y-1 gap-x-4 bg-surface-container-low p-2.5 rounded-lg text-[12px]">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#15803d]">schedule</span>
+<span class="font-semibold">06:00 – 22:00 IST</span>
+<span class="px-1.5 py-0.2 rounded bg-[#dcfce7] text-[#15803d] font-bold text-[9px]">OPEN NOW</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px] text-surface-tint">verified</span>
+<span>Audited Today 09:30 by KMC Inspector #04</span>
+</div>
+</div>
+<!-- Facility Feature Badges -->
+<div class="pl-2 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#0284c7]">device_thermostat</span> Chilled &amp; UV Filtered
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#15803d]">medication</span> Free ORS Sachets
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">accessible</span> Wheelchair Accessible
+          </span>
+</div>
+<!-- Interactive Direct Actions -->
+<div class="pl-2 pt-1 flex items-center justify-between gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-[#1b3e2e] font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">directions_walk</span>
+<span>Walking Route</span>
+</button>
+<button class="py-2 px-3 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-secondary font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="reportIssuePrompt('KMC Water Kiosk #14')" title="Report dry tap or malfunction">
+<span class="material-symbols-outlined text-[16px]">report</span>
+<span>Report Tap Issue</span>
+</button>
+</div>
+</div>
+<!-- CARD 2: Vidyasagar Community Cooling Shelter (AC) -->
+<div class="facility-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-3 relative overflow-hidden group" id="facility-2">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#15803d]"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex items-start gap-2.5">
+<div class="h-9 w-9 rounded-lg bg-[#dcfce7] text-[#15803d] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[10px] px-2 py-0.5 rounded-full bg-[#dcfce7] text-[#15803d] font-bold">CIVIC COOLING REFUGE</span>
+<span class="font-label-caps text-label-caps text-secondary">Ward 49</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-0.5">
+                Vidyasagar Community Air-Cooled Hall
+              </h3>
+<span class="font-body-sm text-body-sm text-secondary">12 Mirzapur Street (Near Baptist Chapel)</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">600m</span>
+<span class="font-label-caps text-[10px] text-secondary">8 min walk</span>
+</div>
+</div>
+<!-- Occupancy Bar & Hours -->
+<div class="pl-2 flex flex-col gap-1.5 bg-surface-container-low p-2.5 rounded-lg text-[12px]">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#15803d]">schedule</span>
+<span class="font-semibold">11:00 – 17:00 IST (Peak Wave Hours)</span>
+</div>
+<span class="font-label-caps text-[10px] text-[#15803d] font-bold">18 SPOTS FREE (72% Full)</span>
+</div>
+<!-- Capacity Progress Bar -->
+<div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full rounded-full" style="width: 72%"></div>
+</div>
+</div>
+<!-- Facility Feature Badges -->
+<div class="pl-2 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#15803d]">hvac</span> Heavy-Duty AC (24°C)
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">bed</span> 12 Rest Cots &amp; Recliners
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#dc2626]">health_and_safety</span> On-Site Staff Nurse
+          </span>
+</div>
+<!-- Interactive Direct Actions -->
+<div class="pl-2 pt-1 flex items-center justify-between gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-[#1b3e2e] font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">directions_walk</span>
+<span>Get Directions</span>
+</button>
+<button class="py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="checkCapacityDetails('Vidyasagar AC Refuge')">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+<span>View Capacity</span>
+</button>
+</div>
+</div>
+<!-- CARD 3: College Square Shaded Worker Pavilion -->
+<div class="facility-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-3 relative overflow-hidden group" id="facility-3">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#d97706]"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex items-start gap-2.5">
+<div class="h-9 w-9 rounded-lg bg-[#fef3c7] text-[#d97706] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">beach_access</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[10px] px-2 py-0.5 rounded-full bg-[#fef3c7] text-[#b45309] font-bold">SHADED REST CANOPY</span>
+<span class="font-label-caps text-label-caps text-secondary">Ward 47</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-0.5">
+                College Square Shaded Worker Pavilion
+              </h3>
+<span class="font-body-sm text-body-sm text-secondary">Bustee Welfare Board Pavilion, West Embankment</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">850m</span>
+<span class="font-label-caps text-[10px] text-secondary">11 min walk</span>
+</div>
+</div>
+<div class="pl-2 flex flex-wrap items-center gap-y-1 gap-x-4 bg-surface-container-low p-2.5 rounded-lg text-[12px]">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-[#15803d]">check_circle</span>
+<span class="font-semibold">Open 24/7 (Natural Tree &amp; Canvas Shade)</span>
+</div>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px] text-surface-tint">verified</span>
+<span>Inspected 2 days ago • Verified Potable Matka Drum</span>
+</div>
+</div>
+<div class="pl-2 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#d97706]">park</span> Dense Banyan Canopy • 4°C Cooler
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#0284c7]">water</span> Earthen Pot (Matka) Cold Water
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">moped</span> Van &amp; Rickshaw Parking Space
+          </span>
+</div>
+<div class="pl-2 pt-1 flex items-center justify-between gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-[#1b3e2e] font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">directions_walk</span>
+<span>Get Directions</span>
+</button>
+<button class="py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span>Send SMS Alert</span>
+</button>
+</div>
+</div>
+<!-- CARD 4: Calcutta Medical College Heat Emergency Desk -->
+<div class="facility-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-3 relative overflow-hidden group" id="facility-4">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#dc2626]"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex items-start gap-2.5">
+<div class="h-9 w-9 rounded-lg bg-[#fee2e2] text-[#dc2626] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-[10px] px-2 py-0.5 rounded-full bg-[#fee2e2] text-[#991b1b] font-bold">RAPID HEAT TRIAGE</span>
+<span class="font-label-caps text-label-caps text-secondary">Ward 44</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-0.5">
+                Calcutta Medical College &amp; Hospital Heat Desk
+              </h3>
+<span class="font-body-sm text-body-sm text-secondary">88 College Street, Casualty Block Ground Floor</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1.1 km</span>
+<span class="font-label-caps text-[10px] text-secondary">15 min walk</span>
+</div>
+</div>
+<div class="pl-2 flex flex-wrap items-center gap-y-1 gap-x-4 bg-[#fef2f2] p-2.5 rounded-lg text-[12px] text-[#991b1b]">
+<div class="flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-[16px]">emergency</span>
+<span>24/7 Heatstroke Resuscitation Unit</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">ac_unit</span>
+<span>Ice Immersion Immersion Tubs Ready</span>
+</div>
+</div>
+<div class="pl-2 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-[#dc2626]">bloodtype</span> IV Fluid Rehydration Station
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container font-label-caps text-[10px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">ambulance</span> Dedicated Ambulance Bay
+          </span>
+</div>
+<div class="pl-2 pt-1 flex items-center justify-between gap-2">
+<a class="flex-1 py-2 px-3 rounded-lg bg-error text-on-error hover:bg-[#b91c1c] font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" href="tel:108">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Dispatch Ambulance (108)</span>
+</a>
+<button class="py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">directions</span>
+<span>ER Route</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Callout: Citizen & Field Lead Contribution -->
+<div class="px-margin-desktop py-space-xl">
+<div class="bg-primary-container text-on-primary rounded-2xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="h-14 w-14 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 text-on-primary">
+<span class="material-symbols-outlined text-[32px]">campaign</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-white">Coordinate a Water Post or Report a Closed Facility</span>
+<p class="font-body-md text-body-md text-on-primary-container max-w-2xl">
+            Community organizers, gurudwaras, NGOs, and municipal sanitarians can register temporary relief stations or report dysfunctional municipal taps to prevent heatstroke fatalities.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<button class="w-full md:w-auto px-5 py-2.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg hover:bg-white transition-all shadow-sm flex items-center justify-center gap-2" onclick="document.getElementById('reportModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Register New Point</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL: Add / Report Resource Dialog -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm" id="reportModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px] text-surface-tint">water_voc</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Community Relief Point Report</h2>
+</div>
+<button class="p-1 rounded-md text-secondary hover:text-on-surface transition-colors" onclick="document.getElementById('reportModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+        Submissions are instantly forwarded to the Kolkata Municipal Corporation Ward Surveillance Cell for rapid verification.
+      </p>
+<form class="flex flex-col gap-3" onsubmit="handleModalSubmit(event)">
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Point Category</label>
+<select class="w-full bg-surface-container px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none">
+<option>Chilled Drinking Water Post / Matka</option>
+<option>Air-Cooled Community Shelter</option>
+<option>Shaded Canopy / Worker Rest Shelter</option>
+<option>Report Faulty / Broken Water Tap</option>
+</select>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Location / Landmark</label>
+<input class="w-full bg-surface-container px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none" placeholder="e.g. Near Bowbazar Crossing, Ward 48" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Water / Coolant Type</label>
+<input class="w-full bg-surface-container px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none" placeholder="e.g. RO Filtered + Ice" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Operating Hours</label>
+<input class="w-full bg-surface-container px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none" placeholder="e.g. 08:00 - 19:00" type="text"/>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Field Reporter Contact (Optional)</label>
+<input class="w-full bg-surface-container px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface focus:ring-2 focus:ring-primary-container focus:outline-none" placeholder="+91 Phone number for verification" type="tel"/>
+</div>
+<div class="pt-2 flex items-center justify-end gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors" onclick="document.getElementById('reportModal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-5 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-[#1b3e2e] transition-colors flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Submit Verification Request</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+    // Highlight & scroll card into view when map pin is clicked
+    function selectFacility(facilityId) {
+      const card = document.getElementById(facilityId);
+      if (card) {
+        // Remove highlit rings from all cards
+        document.querySelectorAll('.facility-card').forEach(c => {
+          c.classList.remove('ring-2', 'ring-primary-container', 'scale-[1.01]');
+        });
+
+        // Add highlight styling to chosen card
+        card.classList.add('ring-2', 'ring-primary-container', 'scale-[1.01]');
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // Category pill filtering interaction
+    document.querySelectorAll('.cat-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        document.querySelectorAll('.cat-pill').forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary');
+          p.classList.add('bg-surface-container-lowest', 'text-secondary');
+        });
+        pill.classList.remove('bg-surface-container-lowest', 'text-secondary');
+        pill.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    // Simple search filter micro-interaction
+    const searchInput = document.getElementById('facilitySearchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        document.querySelectorAll('.facility-card').forEach(card => {
+          const text = card.innerText.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Modal submit handler
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      alert('Thank you. Submission received and dispatched to KMC Borough V Field Sanitarians for verification.');
+      document.getElementById('reportModal').classList.add('hidden');
+    }
+
+    function reportIssuePrompt(facilityName) {
+      alert('Incident logger opened for: ' + facilityName + '. Alert transmitted to ward plumber team.');
+    }
+
+    function checkCapacityDetails(shelterName) {
+      alert(shelterName + ': Currently 47 of 65 cots occupied. 18 spots free. Air conditioning running at optimal 24°C.');
+    }
+  </script>
+</div></main></div></body></html>
