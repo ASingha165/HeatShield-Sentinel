@@ -300,7 +300,7 @@ See full independent audit report in [docs/final-compliance-audit.md](file:///d:
 | Mandatory Workshop Completion | UNVERIFIED | Requires manual verification of attendee email on Devpost. |
 | Original Strands-Powered Social-Good Agent | VERIFIED | Built with Strands Agents SDK 1.62.0 (`Agent`, `tool`, `BedrockModel`). |
 | Builder Center Project Article | INCOMPLETE | Architecture and evaluation drafted; requires manual posting on AWS Builder Center. |
-| Public Source-Code Repository | UNVERIFIED | Local Git repo clean on master; requires manual push to public GitHub. |
+| Public Source-Code Repository | VERIFIED | Pushed to [https://github.com/ASingha165/HeatShield-Sentinel](https://github.com/ASingha165/HeatShield-Sentinel) on `master` branch (commit `df0e270`). |
 | Demonstration Video (< 3 minutes) | INCOMPLETE | Full UI running live; requires manual recording (<180s) and YouTube upload. |
 | Technical Functionality | VERIFIED | 22/22 pytest passed, build succeeded, end-to-end integration verified. |
 | Social-Impact Evaluation | VERIFIED | 9/9 benchmark scenarios executed reproducibly and recorded in `docs/evaluation.md`. |
@@ -323,4 +323,5 @@ See full independent audit report in [docs/final-compliance-audit.md](file:///d:
 * **2026-10-28 (Phase 4, 5, 6, 7, 8):** Implemented FastAPI backend, Pydantic schemas, Open-Meteo weather service with Stull wet-bulb formula, verified KMC cooling resource registry, and AWS Strands Agents multi-agent harness (`EnvironmentalRiskAgent`, `WorkerSafetyAgent`, `CommunityResourceAgent`, `VerificationAgent`, and `StrandsOrchestrator`).
 * **2026-10-28 (Phase 9 & 10):** Executed complete Pytest suite (20/20 passed) and Vite build (0 errors). Reconciled `AGENTS.md` persistent source of truth.
 * **2026-10-29 (Compliance Audit):** Conducted rigorous independent compliance audit. Upgraded all four subagents to genuinely instantiate `strands.Agent` with `@tool` decorators. Added explicit tests in `test_agents.py` (22/22 passed). Implemented reproducible evaluation benchmark runner (`run_evaluation_benchmarks.py`) passing all 9 scenarios with 160.69ms average latency. Created `docs/final-compliance-audit.md`.
+* **2026-10-30 (GitHub Deployment):** Connected local repository to public GitHub at [https://github.com/ASingha165/HeatShield-Sentinel](https://github.com/ASingha165/HeatShield-Sentinel). Security audit confirmed zero credentials in tracked files. Pushed 2 commits on `master` branch (HEAD: `df0e270`). Upstream tracking configured (`origin/master`).
 
